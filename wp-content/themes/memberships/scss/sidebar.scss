@@ -1,0 +1,30 @@
+.panel-heading .accordion-toggle h4:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  
+    content:"\E113";   
+    float: right;        
+    color: grey;        
+    overflow: no-display;
+}
+.panel-heading .accordion-toggle.collapsed h4:after {
+    /* symbol for "collapsed" panels */
+    content:"\E114";
+}
+a.accordion-toggle{
+    text-decoration: none;
+}
+.sg-sidebar .panel-body {
+  padding: 0;
+  li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    a {
+      display: block;
+      padding: 8px 8px 8px 15px;
+    }
+    a:hover {
+      text-decoration: none;
+      background-color: #f5f5f5;
+    }
+  }
+}
