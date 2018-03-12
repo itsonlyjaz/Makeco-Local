@@ -76,7 +76,24 @@
 
   <div class="nav-level-2">
     <div class="container">
+        <!-- hardcoded now, but once that thing is done under there, watch out -->
+        <ul id="menu-secondary_universal_menu" class="nav navbar-nav">
+            <li id="menu-item-1648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1648"><a title="Our<br/>Team" href="/our-team/"><span>Our<br>Team</span></a></li>
+
+        </ul>
         <?php
+          wp_nav_menu( array(
+              'menu'              => 'secondary_universal_menu',
+              'theme_location'    => 'secondary_universal_menu',
+              'depth'             => 1,
+              'container'         => '',
+              'container_class'   => '',
+              'link_before'       => '<span>',
+              'link_after'        => '</span>',
+              'menu_class'        => 'nav navbar-nav',
+              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+              'walker'            => new wp_bootstrap_navwalker())
+
           // wp_nav_menu( array(
           //     'menu'              => 'primary',
           //     'theme_location'    => 'primary',
